@@ -2,12 +2,12 @@
 <html lang="en">
     <!-- This is a sample from a fellow student for me to alter -->
 
-    <!-- This is the Head of the html document. It is loaded before the Body and is used
-        for imports and meta-data  -->
     <head>
 
-        <title>Simple Webpage Example</title>   <!-- will be displayed as title of tab -->
+        <title>Mikey</title>   <!-- will be displayed as title of tab -->
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://fonts/googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 
@@ -20,9 +20,9 @@
 
         <br><br>  <!-- These are break tags, which cause a new line. I used 2 to double space. -->
 
-        <div id='app'></div>
-
-        <b>Click the Home and About links at the top of the page to navigate between the pages of the app.</b>
+        <div class"block-content">
+          <div id='app'></div>
+        </div>
 
         <!-- This is our javascript that will actually write the HTML to our webpage -->
         <!-- All Javascript must occur within the script tags! -->
@@ -50,9 +50,6 @@
                     <p>majoring in Computer Science. I enjoy facing new </p>
                     <p>challenges and diving into the deep end to start </p>
                     <p>figuring things out.
-
-                    <div>General purpose element that can hold text as well as <b>other elements</b> within it.</div>
-                    <img width=128 height=128 src='https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=1390&crop=1'>
                 `;
 
 
@@ -72,9 +69,9 @@
                 const button = document.createElement('button');
 
                 // set the text of the new elements
-                title.innerHTML = 'This is the About Page!';
-                message.innerHTML = 'This element was created dynamically!';
-                button.innerHTML = 'Click Me!';
+                title.innerHTML = 'You like science??';
+                message.innerHTML = 'Better not do it...';
+                button.innerHTML = 'Ok then.';
 
                 // Define the action for our button
                 function buttonAction() {
