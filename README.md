@@ -1,2 +1,2 @@
 # shpoopdy.JavaScript
-My GitHub page, but translated to JavaScript.
+My GitHub page, but with some JavaScript added.
