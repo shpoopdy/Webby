@@ -1,18 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: 'Asap', sans-serif;
+  --ff-secondary: 'PT Mono', monospace;
+
+  --fw--reg: 400;
+
+  --clr-bg: #0B1117;
+  --clr-accent: #231F0F;
+  --clr-accent2: #282E33;
+  --clr-accent3: #02060A;
+  --clr-light: #ffffff;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+
 body {
   margin: 0;
   width: auto;
   height: auto;
-  background: #1d1f21;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  background: var(--clr-bg);
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #ced0d3;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-h1);
+  color: var(--clr-light);
 }
 
-.index-h2 {
-  color: #606367;
-}
 
 time {
   color: #606367;
@@ -20,9 +48,8 @@ time {
 
 p {
   text-align: center;
-  color: #ced0d3;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  color: var(--clr-light);
+  font-family: var(--ff-secondary);
 }
 
 
@@ -78,8 +105,6 @@ p {
 }
 
 
-
-
 .main-nav {
   display: flex;
   padding: 35px;
@@ -89,7 +114,6 @@ p {
 .push {
     margin-left: auto;
 }
-
 
 /* This part does the color transition when hovered on.*/
 
@@ -104,7 +128,7 @@ ul {
 
 .main-nav a {
     font-size: 30px;
-    color: #ffffff;
+    color: var(--clr-light);
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -118,7 +142,6 @@ ul {
   align-items: flex-end; /*Centered the links, alongside padding*/
   height: 70px;
   margin: 0;
-  background-color: #161719;
 }
 
 .navbar li {
@@ -129,7 +152,7 @@ ul {
 
 .navbar a {
   font-size: 30px;
-  color: #ffffff;
+  color: var(--clr-light);
   text-decoration: none;
   transition: color 0.5s;
 }
@@ -137,7 +160,6 @@ ul {
 .navbar a:hover {
   color: black;
 }
-
 
 
 /* header background */
@@ -157,7 +179,6 @@ ul {
   clear: both;
 }
 
-
 /* footer */
 
 footer {
@@ -165,7 +186,7 @@ footer {
   width: 100%;
   bottom: 0;
   position: fixed;
-  background-color: #161719;
+  background-color: var(--clr-accent3);
 }
 
 .socialMediaBlock {
