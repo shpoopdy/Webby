@@ -81,7 +81,7 @@ p {
   text-align: center;
   width: 35%;
   height: auto;
-  padding-top: 525px;
+
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -162,17 +162,17 @@ ul {
 }
 
 
-/* header background */
-.header_img {
-  height: 525px;
-  width: 100%;
-  position: absolute;
-  background-image: url("../images/me.jpg");
-  background-repeat: no-repeat;
-  background-position: 0%, 0%, 0%, 0%;
-  background-attachment: scroll, fixed;
-  background-size: cover;
-}
+
+
+
+
+
+
+
+
+
+
+
 
 
 .header_img::after {
