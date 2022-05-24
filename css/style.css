@@ -163,18 +163,6 @@ ul {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .header_img::after {
   clear: both;
 }
@@ -186,7 +174,6 @@ footer {
   width: 100%;
   bottom: 0;
   position: fixed;
-  background-color: var(--clr-accent3);
 }
 
 .socialMediaBlock {
