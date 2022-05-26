@@ -55,29 +55,34 @@ time {
   color: #606367;
 }
 
-
-#about {
-  text-align: left;
-  margin: auto;
-  width: 35%;
-  padding-bottom: 8%;
-  float: none;
-}
-
 #about-p {
   text-align: justify;
   margin: 25px auto auto auto;
   width: 35%;
 }
 
+
 #mikey-foto {
   border-radius: 50%;
-  width: 25%;
+  width: 100%;
   float: right;
-  
 }
 
 
+.container {
+  display: flex;
+  width: 35%;
+  flex-direction: row-reverse;
+  margin: auto;
+}
+
+.container__image {
+  width: 30%;
+}
+
+.container__feature {
+  flex: 1;
+}
 
 
 .wrapper {
