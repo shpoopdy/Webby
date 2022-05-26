@@ -36,9 +36,18 @@ body {
 }
 
 h1 {
+  margin: 0;
+  display: inline-block;
   font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
   color: var(--clr-light);
+}
+
+p {
+  color: var(--clr-light);
+  margin: 0;
+  font-family: var(--ff-secondary);
+  font-size: 18px;
 }
 
 
@@ -47,8 +56,25 @@ time {
 }
 
 
+#about {
+  text-align: left;
+  margin: auto;
+  width: 25%;
+  padding-bottom: 6%;
+  float: none;
+}
 
+#about-p {
+  text-align: justify;
+  margin: 25px auto auto auto;
+  width: 35%;
+}
 
+#mikey-foto {
+  border-radius: 50%;
+  width: 35%;
+  float: right;
+}
 
 
 
@@ -81,7 +107,6 @@ time {
   text-align: center;
   width: 35%;
   height: auto;
-
   padding-left: 32px;
   padding-right: 32px;
 }
@@ -89,18 +114,6 @@ time {
 .block-content h1 {
   display: block;
   font-size: 28px;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-p {
-  color: var(--clr-light);
-  display: block;
-  text-align: justify;
-  font-family: var(--ff-secondary);
-  font-size: 18px;
   margin-top: 1em;
   margin-bottom: 1em;
   margin-left: 0;
@@ -137,7 +150,7 @@ ul {
 }
 
 .main-nav a:hover {
-    color: black;
+    color: #282E33;
 }
 
 .navbar {
@@ -161,13 +174,7 @@ ul {
 }
 
 .navbar a:hover {
-  color: black;
-}
-
-
-
-.header_img::after {
-  clear: both;
+  color: #282E33;
 }
 
 /* footer */
