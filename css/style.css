@@ -46,11 +46,11 @@ time {
   color: #606367;
 }
 
-p {
-  text-align: center;
-  color: var(--clr-light);
-  font-family: var(--ff-secondary);
-}
+
+
+
+
+
 
 
 .wrapper {
@@ -95,8 +95,11 @@ p {
   margin-right: 0;
 }
 
-.block-content p {
+p {
+  color: var(--clr-light);
   display: block;
+  text-align: justify;
+  font-family: var(--ff-secondary);
   font-size: 18px;
   margin-top: 1em;
   margin-bottom: 1em;
