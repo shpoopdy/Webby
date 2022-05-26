@@ -60,7 +60,7 @@ time {
   text-align: left;
   margin: auto;
   width: 25%;
-  padding-bottom: 6%;
+  padding-bottom: 8%;
   float: none;
 }
 
@@ -72,7 +72,7 @@ time {
 
 #mikey-foto {
   border-radius: 50%;
-  width: 35%;
+  width: 45%;
   float: right;
 }
 
@@ -191,6 +191,6 @@ footer {
 }
 
 .socialMediaBlock a:hover img {
-  filter: brightness(0);
+  filter: brightness(20%);
   transition: 0.5s;
 }
