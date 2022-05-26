@@ -59,7 +59,7 @@ time {
 #about {
   text-align: left;
   margin: auto;
-  width: 25%;
+  width: 35%;
   padding-bottom: 8%;
   float: none;
 }
@@ -72,8 +72,9 @@ time {
 
 #mikey-foto {
   border-radius: 50%;
-  width: 45%;
+  width: 25%;
   float: right;
+  
 }
 
 
