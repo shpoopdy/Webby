@@ -90,6 +90,10 @@ button {
   
 }
 
+#time {
+  font-size: var(--fs-h2);
+}
+
 .youtube {
   display: grid;
   grid-template-areas: 
@@ -183,6 +187,7 @@ button {
 
 .main-nav li {
     border-bottom: 1px solid transparent;
+    color: var(--clr-light);
     transition: border-bottom 0.5s;
 }
 
