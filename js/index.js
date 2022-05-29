@@ -1,17 +1,20 @@
-let slideIndex = 0;
-showSlides();
+window.addEventListener("load", displayGreeting);
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("container__image");
-    for(i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+function displayGreeting() {
+    let today = new Date();
+    let hour = today.getHours();
+    let greeting;
+    let timey = document.getElementById('time');
+
+    if(hour > 18) {
+        greeting = 'こんばんは';
     }
-    slideIndex++;
-    if(slideIndex > slides.length) {
-        slideIndex = 1;
+    else if(hour > 12) {
+        greeting = 'こんにちは';
+    }
+    else {
+        greeting = 'おはようございます';
     }
 
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 10000);
+    timey.innerHTML = greeting;
 }
