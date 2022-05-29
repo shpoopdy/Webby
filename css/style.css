@@ -87,7 +87,21 @@ button {
   border-radius: 50%;
   width: 100%;
   float: right;
+  
 }
+
+.youtube {
+  display: grid;
+  grid-template-areas: 
+    "vidOne vidTwo"
+    "vidThree vidFour";
+  grid-template-rows: 50px auto 70px;
+}
+
+.vidOne { grid-area: vidOne; }
+.vidTwo { grid-area: vidTwo; }
+.vidThree { grid-area: vidThree; }
+.vidFour { grid-area: vidFour; }
 
 .button {
   margin-top: 2%;
@@ -105,6 +119,7 @@ button {
 
 .container__image {
   width: 30%;
+  
 }
 
 .container__feature {
