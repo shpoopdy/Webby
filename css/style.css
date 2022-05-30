@@ -99,12 +99,20 @@ button {
   grid-template-areas: 
     "vidOne vidOne"
     "vidTwo vidTwo";
-  grid-template-rows: 100px 100px;
+  grid-template-rows: 378px 378px;
   gap: 50px 50px;
 }
 
-.vidOne { grid-area: vidOne; }
-.vidTwo { grid-area: vidTwo; }
+.vidOne {
+  overflow: hidden;
+  grid-area: vidOne;
+  border-radius: 5%;
+}
+.vidTwo {
+  overflow: hidden;
+  grid-area: vidTwo;
+  border-radius: 5%;
+}
 
 .button {
   margin-top: 2%;
