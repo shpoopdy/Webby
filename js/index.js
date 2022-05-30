@@ -6,10 +6,10 @@ function displayGreeting() {
     let greeting;
     let timey = document.getElementById('time');
 
-    if(hour > 18) {
+    if(hour >= 18) {
         greeting = 'こんばんは';
     }
-    else if(hour > 12) {
+    else if(hour >= 12) {
         greeting = 'こんにちは';
     }
     else {
