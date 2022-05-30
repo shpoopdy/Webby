@@ -76,7 +76,7 @@ button {
   background-color: var(--clr-accent2);
 }
 
-#about-p {
+#main-contain {
   text-align: justify;
   margin: 25px auto auto auto;
   width: 35%;
@@ -97,15 +97,14 @@ button {
 .youtube {
   display: grid;
   grid-template-areas: 
-    "vidOne vidTwo"
-    "vidThree vidFour";
-  grid-template-rows: 50px auto 70px;
+    "vidOne vidOne"
+    "vidTwo vidTwo";
+  grid-template-rows: 100px 100px;
+  gap: 50px 50px;
 }
 
 .vidOne { grid-area: vidOne; }
 .vidTwo { grid-area: vidTwo; }
-.vidThree { grid-area: vidThree; }
-.vidFour { grid-area: vidFour; }
 
 .button {
   margin-top: 2%;
