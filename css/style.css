@@ -97,10 +97,9 @@ button {
 .youtube {
   display: grid;
   grid-template-areas: 
-    "vidOne vidOne"
-    "vidTwo vidTwo";
-  grid-template-rows: 378px 378px;
-  gap: 50px 50px;
+    "vidOne vidTwo";
+  grid-template-rows: 175px;
+  gap: 50px;
 }
 
 .vidOne {
