@@ -46,7 +46,7 @@ h1 {
 
 h3 {
   color: var(--clr-light);
-  text-decoration: underline var(--clr-accent2) 3px;
+  text-decoration: underline var(--clr-accent4) 3px;
 }
 
 p {
