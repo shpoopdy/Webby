@@ -98,7 +98,7 @@ button {
   display: grid;
   grid-template-areas: 
     "vidOne vidTwo";
-  grid-template-rows: 175px;
+  grid-template-rows: 191px;
   gap: 50px;
 }
 
