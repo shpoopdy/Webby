@@ -1,7 +1,5 @@
-window.addEventListener("load", displayGreeting);
 document.getElementById('time').addEventListener("mouseover", englishGreet);
 document.getElementById('time').addEventListener("mouseleave", displayGreeting);
-
 
 function englishGreet() {
         let today = new Date();
@@ -39,3 +37,5 @@ function displayGreeting() {
 
     timey.innerHTML = greeting;
 }
+
+displayGreeting();
