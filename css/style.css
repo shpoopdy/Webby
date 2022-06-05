@@ -94,6 +94,22 @@ button {
   font-size: 20px;
 }
 
+#transition-fadey {
+  animation-duration: 0.25s;
+  transition-timing-function: ease-in;
+  animation-name:fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .youtube {
   display: grid;
   grid-template-areas: 
