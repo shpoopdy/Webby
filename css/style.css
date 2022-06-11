@@ -77,6 +77,8 @@ button {
 }
 
 #main-contain {
+  position: relative;
+  min-height: 100vh;
   text-align: justify;
   margin: 25px auto auto auto;
   width: 35%;
@@ -258,7 +260,7 @@ footer {
   display: block;
   width: 100%;
   bottom: 0;
-  position: fixed;
+  position: absolute;
 }
 
 .socialMediaBlock {
