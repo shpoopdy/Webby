@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-primary);
+}
+
+:root {
+  --ff-primary: 'Asap', sans-serif;
+  --ff-secondary: 'PT Mono', monospace;
+
+  --fw--reg: 400;
+
+  --clr-bg: #0B1117;
+  --clr-accent: #231F0F;
+  --clr-accent2: #282E33;
+  --clr-accent3: #02060A;
+  --clr-accent4: #2969FE;
+  --clr-light: #ffffff;
+  --clr-incorrect: #FC6B00;
+  --clr-correct: #282E33;
+
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--clr-bg);
+}
+
+.wrapper {
+  width: 770px;
+  background: var(--clr-accent2);
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.wrapper .content-box {
+  padding: 13px 20px 0;
+  border-radius: 10px;
+}
+
+.content-box .typing-text {
+  max-height: 255px;
+  overflow-y: auto;
+}
+
+.typing-text{
+  scrollbar-width: none; /*This hides the scrollbar for Firefox*/
+}
+
+.typing-text p span.correct {
+  color: var(--clr-correct);
+}
+.typing-text p span.incorrect {
+  color: var(--clr-incorrect);
+}
+
+
+.typing-text p {
+  color: var(--clr-light);
+  font-size: 21px;
+  text-align: justify;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+
+.content-box .content {
+  display: flex;
+  margin-top: 17px;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+
+.content .result-details {
+  display: flex;
+  width: calc(100% - 140px);
+  justify-content: space-between;
+}
+
+.result-details li {
+  display: flex;
+  list-style: none;
+}
+
+.result-details li p {
+  font-size: 19px;
+}
+
+.result-details li span {
+  display: block;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.result-details li b {
+  font-weight: 500;
+}
