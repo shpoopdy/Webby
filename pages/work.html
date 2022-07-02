@@ -4,8 +4,7 @@
     <title>Work</title>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Asap&family=PT+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/work.js" defer></script>
+    <link rel="stylesheet" href="../css/work-type.css">
   </head>
 
   <body>
@@ -23,10 +22,34 @@
       </div>
     </div>
 
-    <div id="type-container">
-      <div class="words">Shoop</div>
-      <textarea class="type-box"></textarea>
+    <div class="wrapper">
+      <input type="text" class="input-field">
+      <div class="content-box">
+        <div class="typing-text">
+          <p class="normal"></p>
+        </div>
+        <div class="content">
+          <ul class="result-details">
+            <li class="time">
+              <p>Time Left:</p>
+              <span><b>60</b>s</span>
+            </li>
+            <li class="mistake">
+              <p>Mistakes:</p>
+              <span></span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <span>0</span>
+            </li>
+          </ul>
+          <button>Try Again</button>
+        </div>
+      </div>
     </div>
+
+    <script src="../js/paragraphs.js"></script>
+    <script src="../js/work.js"></script>
 
     <div id="main-contain">
       <footer>
