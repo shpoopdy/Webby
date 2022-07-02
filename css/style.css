@@ -84,15 +84,15 @@ button {
   width: 35%;
 }
 
-.type-container {
+#type-container {
+  background-color: var(--clr-accent2);
   display: flex;
+  width: 75%;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
-
-
-  margin: 0;
-
-
+  border-radius: .5rem;
+  margin-left: 2rem;
   border: none;
 }
 
@@ -103,7 +103,7 @@ button {
   background-color: transparent;
   border: none;
   margin: auto;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .type-box:focus {
