@@ -30,6 +30,7 @@
 }
 
 body {
+  
   margin: 0;
   width: auto;
   height: auto;
@@ -86,6 +87,7 @@ body {
 .content-box .typing-text {
   max-height: 255px;
   overflow-y: auto;
+  
 }
 
 .typing-text{
@@ -105,7 +107,6 @@ body {
   font-size: 21px;
   text-align: justify;
   letter-spacing: 1px;
-  word-break: break-all;
 }
 
 .content-box .content {
