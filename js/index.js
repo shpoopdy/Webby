@@ -1,11 +1,12 @@
 document.getElementById('time').addEventListener("mouseover", englishGreet);
 document.getElementById('time').addEventListener("mouseleave", displayGreeting);
+let timey = document.getElementById('time');
 
 function englishGreet() {
         let today = new Date();
         let hour = today.getHours();
         let greeting;
-    
+
         if(hour >= 18) {
             greeting = 'Good Evening';
         }
@@ -15,15 +16,14 @@ function englishGreet() {
         else {
             greeting = 'Good Morning';
         }
-    
-        document.getElementById('time').innerHTML = greeting;
+
+        timey.innerHTML = greeting;
 }
 
 function displayGreeting() {
     let today = new Date();
     let hour = today.getHours();
     let greeting;
-    let timey = document.getElementById('time');
 
     if(hour >= 18) {
         greeting = 'こんばんは';
