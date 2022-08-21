@@ -64,6 +64,8 @@ function initTyping(event) {
     inputField.value = "";
     clearInterval(timer);
   }
+  characters.forEach(span => span.classList.remove("active"));
+  characters[charIndex].classList.add("active");
 }
 
 function initTimer() {

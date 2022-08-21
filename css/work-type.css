@@ -30,7 +30,7 @@
 }
 
 body {
-  
+
   margin: 0;
   width: auto;
   height: auto;
@@ -65,6 +65,10 @@ body {
   font-size: 18px;
 }
 
+input {
+  caret-color: var(--clr-light);
+}
+
 .wrapper {
   margin:auto;
   width: 770px;
@@ -87,7 +91,7 @@ body {
 .content-box .typing-text {
   max-height: 255px;
   overflow-y: auto;
-  
+
 }
 
 .typing-text{
@@ -101,6 +105,29 @@ body {
   color: var(--clr-incorrect);
 }
 
+.typing-text p span.active {
+  color: var(--clr-accent4);
+
+}
+
+.typing-text p span.active::before {
+  content: "|";
+  font-size: 15px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--clr-accent4);
+  opacity: 0;
+  animation: blink 1s ease-in-out infinite;
+}
+
+@keyframes blink {
+  50%{
+    opacity: 1;
+  }
+}
 
 .typing-text p {
   color: var(--clr-light);
