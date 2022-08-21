@@ -106,21 +106,22 @@ input {
 }
 
 .typing-text p span.active {
-  color: var(--clr-accent4);
+
 
 }
 
 .typing-text p span.active::before {
   content: "|";
-  font-size: 15px;
+  font-size: 21px;
+  color: var(--clr-accent4);
   position: relative;
   left: 0;
   bottom: 0;
   height: 2px;
   width: 100%;
-  background: var(--clr-accent4);
+
   opacity: 0;
-  animation: blink 1s ease-in-out infinite;
+  animation: blink .8s ease-in-out infinite;
 }
 
 @keyframes blink {
