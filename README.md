@@ -1,2 +1,2 @@
-# shpoopdy.JavaScript
-My GitHub page, but with some JavaScript added.
+# My Website
+My current website and such.
