@@ -45,6 +45,7 @@ function themeSwitch() {
     let h1List = document.querySelectorAll('h1');
     let h3List = document.querySelectorAll('h3');
     let liList = document.querySelectorAll('a');
+    let btn = document.getElementsByClassName('button1');
     if (theme.checked == true) {
         document.body.style.background = '#E7DEA8';
         for (let i = 0; i <pList.length; i++) {
@@ -54,12 +55,14 @@ function themeSwitch() {
             h1List[j].style.color = 'black';
         }
         for (let k = 0; k < h3List.length; k++) {
+            h3List[k].style.textDecorationColor = 'black';
             h3List[k].style.color = 'black';
         }
         for (let l = 0; l < liList.length; l++) {
             liList[l].style.color = 'black';
         }
-        //document.getElementById('body-text').style.color = 'black';
+        btn[0].style.backgroundColor = 'black';
+        btn[0].style.color = 'white';
     } else {
         document.body.style.background = '#0B1117';
         for (let i = 0; i < pList.length; i++) {
@@ -69,11 +72,14 @@ function themeSwitch() {
             h1List[j].style.color = 'white';
         }
         for (let k = 0; k < h3List.length; k++) {
+            h3List[k].style.textDecorationColor = '#2969FE';
             h3List[k].style.color = 'white';
         }
         for (let l = 0; l < liList.length; l++) {
             liList[l].style.color = 'white';
         }
+        btn[0].style.backgroundColor = '#2969FE';
+        btn[0].style.color = 'black';
     }
 }
 

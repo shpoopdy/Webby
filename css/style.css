@@ -43,11 +43,14 @@ h1 {
   font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
   color: var(--clr-light);
+  transition: color 0.5s;
 }
 
 h3 {
   color: var(--clr-light);
   text-decoration: underline var(--clr-accent4) 3px;
+  transition: color 0.5s;
+  transition: text-decoration-color 0.5s;
 }
 
 p {
@@ -55,6 +58,7 @@ p {
   margin: 0;
   font-family: var(--ff-secondary);
   font-size: 18px;
+  transition: color 0.5s;
 }
 
 /* box around slider */
