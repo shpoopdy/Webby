@@ -10,12 +10,14 @@
 
   --fw--reg: 400;
 
-  --clr-bg: #0B1117;
+  --clr-bgDark: #0B1117;
+  --clr-bgLight: #c1dcf7;
   --clr-accent: #231F0F;
   --clr-accent2: #282E33;
   --clr-accent3: #02060A;
   --clr-accent4: #2969FE;
-  --clr-light: #ffffff;
+  --clr-fontLight: #ffffff;
+  --clr-fontDark: #000000;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -33,7 +35,6 @@ body {
   height: auto;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  background: var(--clr-bg);
 }
 
 
@@ -42,22 +43,29 @@ h1 {
   display: inline-block;
   font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
-  color: var(--clr-light);
   transition: color 0.5s;
 }
 
 h3 {
-  color: var(--clr-light);
   text-decoration: underline var(--clr-accent4) 3px;
   transition: color 0.5s, text-decoration-color 0.5s;
 }
 
 p {
-  color: var(--clr-light);
   margin: 0;
   font-family: var(--ff-secondary);
   font-size: 18px;
   transition: color 0.5s;
+}
+
+.darkTheme {
+  background: var(--clr-bgDark);
+  color: var(--clr-fontLight);
+}
+
+.lightTheme {
+  background: var(--clr-bgLight);
+  color: var(--clr-fontDark);
 }
 
 /* box around slider */

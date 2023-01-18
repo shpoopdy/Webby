@@ -40,49 +40,12 @@ function displayGreeting() {
 }
 
 function themeSwitch() {
-    let style = document.createElement('style');
-    let theme = document.getElementById('theme');
-    let pList = document.querySelectorAll('p');
-    let pStyle = 'p { color:black }';
-    let h1List = document.querySelectorAll('h1');
-    let h3List = document.querySelectorAll('h3');
-    let liList = document.querySelectorAll('a');
-    let btn = document.getElementsByClassName('button1');
-    if (theme.checked == true) {
-        document.body.style.background = '#E7DEA8';
-        /*for (let i = 0; i < pList.length; i++) {
-            pList[i].style.color = 'black';
-        }*/
-        document.elm.style.p.color = 'black';
-        for (let j = 0; j < h1List.length; j++) {
-            h1List[j].style.color = 'black';
-        }
-        for (let k = 0; k < h3List.length; k++) {
-            h3List[k].style.textDecorationColor = 'black';
-            h3List[k].style.color = 'black';
-        }
-        for (let l = 0; l < liList.length; l++) {
-            liList[l].style.color = 'black';
-        }
-        btn[0].style.backgroundColor = 'black';
-        btn[0].style.color = 'white';
+    const bg = document.getElementsByTagName("body");
+    if (bg[0].className == "darkTheme") {
+        console.log("in if statement");
+        bg[0].className = "lightTheme";
     } else {
-        document.body.style.background = '#0B1117';
-        for (let i = 0; i < pList.length; i++) {
-            pList[i].style.color = 'white';
-        }
-        for (let j = 0; j < h1List.length; j++) {
-            h1List[j].style.color = 'white';
-        }
-        for (let k = 0; k < h3List.length; k++) {
-            h3List[k].style.textDecorationColor = '#2969FE';
-            h3List[k].style.color = 'white';
-        }
-        for (let l = 0; l < liList.length; l++) {
-            liList[l].style.color = 'white';
-        }
-        btn[0].style.backgroundColor = '#2969FE';
-        btn[0].style.color = 'black';
+        bg[0].className = "darkTheme";
     }
 }
 
