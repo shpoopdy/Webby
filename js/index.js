@@ -40,12 +40,14 @@ function displayGreeting() {
 }
 
 function themeSwitch() {
+    const mainNav = document.getElementsByTagName("ul");
     const bg = document.getElementsByTagName("body");
     if (bg[0].className == "darkTheme") {
-        console.log("in if statement");
         bg[0].className = "lightTheme";
+        mainNav[0].className = "main-nav-light";
     } else {
         bg[0].className = "darkTheme";
+        mainNav[0].className = "main-nav";
     }
 }
 

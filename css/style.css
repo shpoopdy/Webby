@@ -58,6 +58,7 @@ p {
   transition: color 0.5s;
 }
 
+
 .darkTheme {
   background: var(--clr-bgDark);
   color: var(--clr-fontLight);
@@ -302,6 +303,28 @@ ul {
 
 .main-nav a:hover {
     color: #282E33;
+}
+
+.main-nav-light {
+  display: flex;
+  padding: 35px;
+}
+
+.main-nav-light li {
+  border-bottom: 1px solid transparent;
+  color: var(--clr-light);
+  transition: border-bottom 0.5s;
+}
+
+.main-nav-light a {
+  font-size: 30px;
+  color: var(--clr-light);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.main-nav-light a:hover {
+  color: #7a7a7a;
 }
 
 /* footer */
