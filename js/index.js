@@ -39,6 +39,7 @@ function displayGreeting() {
     timey.innerHTML = greeting;
 }
 
+/*
 function themeSwitch() {
     const mainNav = document.getElementsByTagName("ul");
     const bg = document.getElementsByTagName("body");
@@ -50,5 +51,6 @@ function themeSwitch() {
         mainNav[0].className = "main-nav";
     }
 }
+*/
 
 displayGreeting();
