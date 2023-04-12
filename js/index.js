@@ -1,7 +1,7 @@
 document.getElementById('time').addEventListener("mouseover", englishGreet);
 document.getElementById('time').addEventListener("mouseleave", displayGreeting);
-document.getElementById('theme').addEventListener("click", themeSwitch);
 let timey = document.getElementById('time');
+
 
 function englishGreet() {
         let today = new Date();

@@ -53,7 +53,7 @@ h3 {
 
 p {
   margin: 0;
-  font-family: var(--ff-secondary);
+  font-family: var(--ff-primary);
   font-size: 18px;
   transition: color 0.5s;
 }
