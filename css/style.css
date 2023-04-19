@@ -35,6 +35,8 @@ body {
   height: auto;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
+  color: var(--clr-fontLight);
+  background-color: var(--clr-bgDark);
 }
 
 
