@@ -66,11 +66,6 @@ p {
   color: var(--clr-fontLight);
 }
 
-.lightTheme {
-  background: var(--clr-bgLight);
-  color: var(--clr-fontDark);
-}
-
 
 time {
   color: #606367;
@@ -129,19 +124,19 @@ button {
 .youtube {
   display: grid;
   grid-template-areas:
-    "vidOne vidTwo";
+    "gridOne gridTwo";
   grid-template-rows: 191px;
   gap: 50px;
 }
 
 .vidOne {
   overflow: hidden;
-  grid-area: vidOne;
+  grid-area: gridOne;
   border-radius: 5%;
 }
 .vidTwo {
   overflow: hidden;
-  grid-area: vidTwo;
+  grid-area: gridTwo;
   border-radius: 5%;
 }
 
@@ -243,27 +238,6 @@ ul {
     color: #282E33;
 }
 
-.main-nav-light {
-  display: flex;
-  padding: 35px;
-}
-
-.main-nav-light li {
-  border-bottom: 1px solid transparent;
-  color: var(--clr-light);
-  transition: border-bottom 0.5s;
-}
-
-.main-nav-light a {
-  font-size: 30px;
-  color: var(--clr-light);
-  text-decoration: none;
-  transition: color 0.5s;
-}
-
-.main-nav-light a:hover {
-  color: #7a7a7a;
-}
 
 /* footer */
 
