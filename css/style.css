@@ -81,20 +81,6 @@ time {
   color: #606367;
 }
 
-button {
-  color: black;
-  background-color: var(--clr-accent4);
-  border: none;
-  border-radius: 8px;
-  padding: 15px 32px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button1:hover {
-  color: white;
-  background-color: var(--clr-accent2);
-}
 
 #main-contain {
   position: relative;
@@ -131,7 +117,7 @@ button {
   }
 }
 
-.youtube {
+.grids {
   display: grid;
   grid-template-areas:
     "gridOne gridTwo";
