@@ -42,6 +42,11 @@ function displayGreeting() {
     timey.innerHTML = greeting;
 }
 
+function fillPage() {
+    let bodyText = document.getElementById('body-text');
+    bodyText.innerHTML = 'Hello! My name is Michael and I am currently a full-time undergrad at Cal Poly Humboldt, majoring in Computer Science. I enjoy facing new challenges and diving into the deep end to start figuring things out. <br><br> I have done class projects using languages like C++, JavaScript, Python, and PHP. I have also done some personal projects outside of class that have allowed me to gain a deeper understanding of what I\'ve been learning, most of which can be viewed on my GitHub page. In my free time I like to play chess, piano, study the violi, play video games, make YouTube videos, go hiking, and just socializing with people in general.'
+}
+
 /*
 function themeSwitch() {
     const mainNav = document.getElementsByTagName("ul");
@@ -56,4 +61,5 @@ function themeSwitch() {
 }
 */
 myName.innerHTML = "Mikey";
+fillPage();
 displayGreeting();
