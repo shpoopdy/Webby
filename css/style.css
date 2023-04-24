@@ -125,12 +125,12 @@ time {
   gap: 50px;
 }
 
-.vidOne {
+#gridOne {
   overflow: hidden;
   grid-area: gridOne;
   border-radius: 5%;
 }
-.vidTwo {
+#gridTwo {
   overflow: hidden;
   grid-area: gridTwo;
   border-radius: 5%;
