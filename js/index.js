@@ -1,5 +1,6 @@
 document.getElementById('time').addEventListener("mouseover", englishGreet);
 document.getElementById('time').addEventListener("mouseleave", displayGreeting);
+let myName = document.getElementById('name');
 let timey = document.getElementById('time')
 const mornGreets = ['God Morgon', 'おはようございます', 'Guten Morgen', 'Buenos Días'];
 const afternoonGreets = ['こんにちは', 'Buenas Tardes', 'God Eftermiddag', 'Guten Tag'];
@@ -54,5 +55,5 @@ function themeSwitch() {
     }
 }
 */
-
+myName.innerHTML = "Mikey";
 displayGreeting();
