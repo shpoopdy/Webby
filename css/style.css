@@ -60,6 +60,16 @@ p {
   transition: color 0.5s;
 }
 
+a {
+  color: var(--clr-fontLight);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--clr-fontLight);
+  text-decoration: none;
+}
+
 
 .darkTheme {
   background: var(--clr-bgDark);
