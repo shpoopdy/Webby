@@ -30,13 +30,13 @@ function displayGreeting() {
     let greeting;
 
     if(hour >= 18) {
-        greeting = mornGreets[Math.floor(Math.random()*mornGreets.length)]; 
+        greeting = eveningGreets[Math.floor(Math.random()*eveningGreets.length)]; 
     }
     else if(hour >= 12) {
         greeting = afternoonGreets[Math.floor(Math.random()*afternoonGreets.length)];
     }
     else {
-        greeting = eveningGreets[Math.floor(Math.random()*eveningGreets.length)];
+        greeting = mornGreets[Math.floor(Math.random()*mornGreets.length)];
     }
 
     timey.innerHTML = greeting;
