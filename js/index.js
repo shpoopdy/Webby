@@ -45,10 +45,14 @@ function displayGreeting() {
 function fillPage() {
     let projectTextOne = document.getElementById('project-text-one');
     let projectTextTwo = document.getElementById('project-text-two');
+    let projectTextThree = document.getElementById('project-text-three');
+    let projectTextFour = document.getElementById('project-text-four');
     let bodyText = document.getElementById('body-text');
     bodyText.innerHTML = 'Hello! My name is Michael and I am currently a full-time undergrad at Cal Poly Humboldt, majoring in Computer Science. I enjoy facing new challenges and diving into the deep end to start figuring things out. <br><br> I have done class projects using languages like C++, JavaScript, Python, and PHP. I have also done some personal projects outside of class that have allowed me to gain a deeper understanding of what I\'ve been learning, most of which can be viewed on my GitHub page. In my free time I like to play chess, piano, study the violi, play video games, make YouTube videos, go hiking, and just socializing with people in general.'
-    projectTextOne.innerHTML = 'Blorp blorp blorp blorp blorp blorp';
-    projectTextTwo.innerHTML = 'Blorp blorp blorp blorp blorp blorp';
+    projectTextOne.innerHTML = 'A twitter bot that tweets info from get twitter pages.';
+    projectTextTwo.innerHTML = 'An attempt at making a text (console) based casino game using C++.';
+    projectTextThree.innerHTML = 'Tower defense game made with the Unity game engine.';
+    projectTextFour.innerHTML = 'A website that allows you to try and crack a Vigenère Cipher.';
 }
 
 /*

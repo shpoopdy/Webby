@@ -120,8 +120,10 @@ time {
 .grids {
   display: grid;
   grid-template-areas:
-    "gridOne gridTwo";
+    "gridOne gridTwo"
+    "gridThree gridFour";
   grid-template-rows: 191px;
+  grid-template-columns 150px;
   gap: 50px;
 }
 
@@ -133,6 +135,16 @@ time {
 #gridTwo {
   overflow: hidden;
   grid-area: gridTwo;
+  border-radius: 5%;
+}
+#gridThree {
+  overflow: hidden;
+  grid-area: gridThree;
+  border-radius: 5%;
+}
+#gridFour {
+  overflow: hidden;
+  grid-area: gridFour;
   border-radius: 5%;
 }
 
