@@ -2,9 +2,6 @@ document.getElementById('time').addEventListener("mouseover", englishGreet);
 document.getElementById('time').addEventListener("mouseleave", displayGreeting);
 let myName = document.getElementById('name');
 let timey = document.getElementById('time')
-const mornGreets = ['God Morgon', 'おはようございます', 'Guten Morgen', 'Buenos Días'];
-const afternoonGreets = ['こんにちは', 'Buenas Tardes', 'God Eftermiddag', 'Guten Tag'];
-const eveningGreets = ['こんばんは', 'Buenas Noches', 'God Kväll', 'Guten Abend'];
 
 function englishGreet() {
         let today = new Date();
@@ -30,13 +27,13 @@ function displayGreeting() {
     let greeting;
 
     if(hour >= 18) {
-        greeting = eveningGreets[Math.floor(Math.random()*eveningGreets.length)]; 
+        greeting = 'こんばんは';
     }
     else if(hour >= 12) {
-        greeting = afternoonGreets[Math.floor(Math.random()*afternoonGreets.length)];
+        greeting = 'こんにちは';
     }
     else {
-        greeting = mornGreets[Math.floor(Math.random()*mornGreets.length)];
+        greeting = 'おはようございます';
     }
 
     timey.innerHTML = greeting;
