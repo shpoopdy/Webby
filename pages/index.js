@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+/*
   <head>
     <title>Mikey</title>
     <meta charset="UTF-8">
@@ -75,3 +74,8 @@
     <script src="./js/index.js"></script>
   </body>
 </html>
+*/
+
+export default function Home() {
+  return <h1>Hi</h1>;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/*
 <html lang="en" dir="ltr">
 <head>
   <title>YouTube</title>
@@ -40,4 +40,5 @@
   </footer>
 
   </body>
-</html>
+*/
+
