@@ -45,12 +45,10 @@ h1 {
   display: inline-block;
   font-family: var(--ff-secondary);
   font-size: var(--fs-h1);
-  transition: color 0.5s;
 }
 
 h3 {
   text-decoration: underline var(--clr-accent4) 3px;
-  transition: color 0.5s, text-decoration-color 0.5s;
   font-family: var(--ff-secondary);
 }
 
@@ -58,12 +56,13 @@ p {
   margin: 0;
   font-family: var(--ff-primary);
   font-size: 18px;
-  transition: color 0.5s;
 }
 
 a {
+  font-size: 30px;
   color: var(--clr-fontLight);
   text-decoration: none;
+  transition: color 0.5s;
 }
 
 a:visited {
@@ -71,15 +70,14 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: var(--clr-accent2);
+}
 
 .darkTheme {
   background: var(--clr-bgDark);
   color: var(--clr-fontLight);
 }
-
-
-
-
 
 #main-contain {
   position: relative;
@@ -98,12 +96,6 @@ a:visited {
 
 #time {
   font-size: 20px;
-}
-
-#transition-fadey {
-  animation-duration: 0.25s;
-  transition-timing-function: ease-in;
-  animation-name:fadeIn;
 }
 
 @keyframes fadeIn {
@@ -214,12 +206,8 @@ a:visited {
 
 .main-nav {
   display: flex;
+  justify-content: flex-end;
   padding: 35px;
-}
-
-/* This little push class was used to split the navbar in the way I have it currently*/
-.push {
-    margin-left: auto;
 }
 
 /* This part does the color transition when hovered on.*/
@@ -227,24 +215,26 @@ a:visited {
 .main-nav li {
     border-bottom: 1px solid transparent;
     color: var(--clr-light);
-    transition: border-bottom 0.5s;
+    /*transition: border-bottom 0.5s;*/
 }
 
-ul {
+.main-nav ul {
   list-style-type: none;
 }
 
+/*
 .main-nav a {
     font-size: 30px;
     color: var(--clr-light);
     text-decoration: none;
-    transition: color 0.5s;
+    /*transition: color 0.5s;
 }
-
+*/
+/*
 .main-nav a:hover {
     color: #282E33;
 }
-
+*/
 
 /* footer */
 
