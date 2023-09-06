@@ -45,7 +45,7 @@ function fillPage() {
     let projectTextThree = document.getElementById('project-text-three');
     let projectTextFour = document.getElementById('project-text-four');
     let bodyText = document.getElementById('body-text');
-    bodyText.innerHTML = 'Hello! My name is Michael and I am currently a full-time undergrad at Cal Poly Humboldt, majoring in Computer Science. I enjoy facing new challenges and diving into the deep end to start figuring things out. <br><br> I have done class projects using languages like C++, JavaScript, Python, and PHP. I have also done some personal projects outside of class that have allowed me to gain a deeper understanding of what I\'ve been learning, most of which can be viewed on my GitHub page. In my free time I like to play chess, piano, study the violin, play video games, make YouTube videos, go hiking, and just socialize with people.'
+    bodyText.innerHTML = 'Hello! My name is Michael and I currently have a B.S. degree in Computer Science. I enjoy facing new challenges and diving into the deep end to start figuring things out. <br><br> I have done projects using languages like C++, C#, JavaScript, Python, and PHP. I have also done some personal projects outside of class that have allowed me to gain a deeper understanding of what I\'ve been learning, most of which can be viewed on my GitHub page. In my free time I like to play chess, piano, study the violin, play video games, make YouTube videos, go hiking, and just socialize with people.'
     projectTextOne.innerHTML = 'A twitter bot that tweets info from approved twitter pages.';
     projectTextTwo.innerHTML = 'A todo app created for the iPhone that utilizes SwiftUI';
     projectTextThree.innerHTML = 'Tower defense game made with the Unity game engine.';
