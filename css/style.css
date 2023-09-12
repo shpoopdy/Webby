@@ -133,7 +133,7 @@ a:hover {
     "gridOne gridTwo"
     "gridThree gridFour";
   grid-template-rows: 191px;
-  grid-template-columns 150px;
+  grid-template-columns: 150px;
   gap: 50px;
 }
 
