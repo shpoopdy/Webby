@@ -1,4 +1,7 @@
-import styles from './page.module.css'
+import styles from './page.module.css';
+
+//components
+import pCardList from './components/pCardList';
 
 export default function Home() {
   return (
@@ -10,8 +13,10 @@ export default function Home() {
         <p>
           I have done projects using languages like C++, C#, JavaScript, Python, and PHP. I have also done some personal projects outside of class that have allowed me to gain a deeper understanding of what I\'ve been learning, most of which can be viewed on my GitHub page. In my free time I like to play chess, piano, study the violin, play video games, make YouTube videos, go hiking, and just socialize with people.'
         </p>
-
         <h3>Projects</h3>
+        <div className="grid_container">
+          <pCardList />
+        </div>
       </div>
     </main>
   )
