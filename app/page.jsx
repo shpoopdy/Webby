@@ -1,7 +1,7 @@
 import styles from './page.module.css';
 
 //components
-import pCardList from './components/pCardList';
+import CardList from './components/pCardList';
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         </p>
         <h3>Projects</h3>
         <div className="grid_container">
-          <pCardList />
+          <CardList />
         </div>
       </div>
     </main>
