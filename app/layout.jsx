@@ -5,6 +5,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Hero from './components/HeroHeader';
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {

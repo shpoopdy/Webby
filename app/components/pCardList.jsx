@@ -1,27 +1,33 @@
-import Card from './pCard';
 import React from 'react';
+import styles from './pCardList.module.css';
 
+// Components
+import Card from './pCard';
 
-const testData = [
+const projectData = [
     {
+        "id": 1,
         "name": "Twitter Bot",
         "Image": "/images/twitterBot.png",
         "Link": "https://github.com/shpoopdy/TwitterBot",
         "text": "A twitter bot that tweets info from approved twitter pages."
     },
     {
+        "id": 2,
         "name": "Night Watch App",
         "Image": "/images/nightWatch.png",
         "Link": "https://github.com/shpoopdy/Night-Watch",
         "text": "A todo app created for the iPhone that utilizes SwiftUI"
     },
     {
+        "id": 3,
         "name": "Towered",
         "Image": "/images/towered.png",
         "Link": "https://github.com/shpoopdy/Towered",
         "text": "Tower defense game made with the Unity game engine."
     },
     {
+        "id": 4,
         "name": "Cipher Site",
         "Image": "/images/cipherHack.png",
         "Link": "https://github.com/shpoopdy/Hackathon2023",
@@ -31,9 +37,8 @@ const testData = [
 
 export default function pCardList(props) {
     return (
-        <div>
-            <Card {...testData[0]}/>
-            <Card {...testData[1]}/>
+        <div className={styles.grid_container}>
+            {projectData.map(project => <Card key={project.id} {...project}/>)}
         </div>
     )
 }

@@ -5,9 +5,9 @@ import styles from './pCard.module.css';
 export default function pCard(props) {
     return (
         <div className={styles.pCard}>
-            <Image src={props.Image} alt="Twitter Bot" width={200} height={200} className={styles.pCardImage}/>
+            <Image src={props.Image} alt="Twitter Bot" width={250} height={250} className={styles.pCardImage}/>
             <Link href={props.Link}>{props.name}</Link>
-            <p>Sample Text</p>
+            <p>{props.text}</p>
         </div>
     )
 }
