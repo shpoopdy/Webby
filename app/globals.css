@@ -66,10 +66,17 @@ a {
 a:hover {
   color: var(--clr-accent2);
 }
+/*
+The visited for the anchor tags was causing some kind of weird
+effect where the links would transition to get darker
+but would change back to the original color even while hovering still.
+I think this happened because I had the font color being set in
+the visited css. I'm dumb.
 
 a:visited {
-  color: var(--clr-fontLight);
+
 }
+*/
 
 nav {
   display: flex;

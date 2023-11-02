@@ -1,0 +1,13 @@
+.footer {
+  width: 100%;
+  position: absolute;
+  height: 2.5rem;
+  text-align: center;
+  padding: 10px;
+  
+  transition: 0.5s;
+}
+
+.footer a {
+  padding: 50px;
+}
