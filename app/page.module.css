@@ -1,0 +1,7 @@
+.mainContain {
+    position: relative;
+    min-height: 100vh;
+    text-align: justify;
+    margin: 25px auto auto auto;
+    width: 40%;
+}
