@@ -3,7 +3,6 @@ import './globals.css';
 
 // Components
 import Navbar from './components/Navbar';
-import Hero from './components/HeroHeader';
 import Footer from './components/Footer';
 
 
@@ -19,7 +18,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Navbar />
-        <Hero />
         {children}
         <Footer />
       </body>
