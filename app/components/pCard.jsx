@@ -7,7 +7,7 @@ export default function pCard(props) {
         <div className={styles.pCard}>
             <Image src={props.Image} alt="Twitter Bot" width={250} height={250} className={styles.pCardImage}/>
             <Link href={props.Link}>{props.name}</Link>
-            <p>{props.text}</p>
+            <p className={styles.cardText}>{props.text}</p>
         </div>
     )
 }

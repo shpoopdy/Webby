@@ -5,19 +5,18 @@ import Image from 'next/image';
 import styles from './HeroHeader.module.css';
 
 export default function HeroHeader() {
-  
   let today = new Date();
   let hour = today.getHours();
   let greeting;
 
   if(hour >= 18) {
-      greeting = 'Good Evening';
+      greeting = 'こんばんは';
   }
   else if(hour >= 12) {
-      greeting = 'Good Afternoon';
+      greeting = 'こんにちは';
   }
   else {
-      greeting = 'Good Morning';
+      greeting = 'おはようございます';
   }
 
   
@@ -25,11 +24,11 @@ export default function HeroHeader() {
   const [isHovered, setIsHovered] = useState(greeting);
   const checkGreet = () => {
     if (hour >= 18) {
-      setIsHovered('こんばんは');
+      setIsHovered('Good Evening');
     } else if (hour >= 12) {
-      setIsHovered('こんにちは');
+      setIsHovered('Good Afternoon');
     } else {
-      setIsHovered('おはようございます');
+      setIsHovered('Good Morning');
     }
   }
 
@@ -44,8 +43,8 @@ export default function HeroHeader() {
             <div className={styles.hero_feature}>
               <h1>Mikey</h1>
               <p
-                onMouseEnter={() => setIsHovered(greeting)}
-                onMouseLeave={() => checkGreet()}
+                onMouseEnter={() => checkGreet()}
+                onMouseLeave={() => setIsHovered(greeting)}
               >{isHovered}</p>
             </div>
         </div>
