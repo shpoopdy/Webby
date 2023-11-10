@@ -1,2 +1,2 @@
 # My Website
-My current website and such.
+My current website done using Next.js & React.
