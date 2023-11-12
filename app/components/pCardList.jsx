@@ -35,7 +35,7 @@ const projectData = [
     }
 ]
 
-export default function pCardList(props) {
+export default function pCardList() {
     return (
         <div className={styles.grid_container}>
             {projectData.map(project => <Card key={project.id} {...project}/>)}

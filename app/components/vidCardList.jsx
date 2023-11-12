@@ -17,7 +17,7 @@ const vidData = [
         "src": <iframe className={styles.vCard} width="560" height="315" src="https://www.youtube.com/embed/bOpOTIkiYTg?si=BG3-Yr1ajyPvKIVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     }
 ]
-export default function vidCardList(props) {
+export default function vidCardList() {
     return (
         <div className={styles.grid_container}>
             {vidData.map(project => <Video key={project.id} {...project}/>)}
