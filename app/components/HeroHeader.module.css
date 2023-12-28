@@ -14,3 +14,9 @@
     border-radius: 50%;
     float: right;
 }
+
+@media (max-width: 768px) {
+    .hero_image {
+        display: none;
+    }
+}
