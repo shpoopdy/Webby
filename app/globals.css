@@ -104,3 +104,9 @@ nav li {
   margin: 25px auto auto auto;
   width: 40%;
 }
+
+@media (max-width: 768px) {
+  .mainContain {
+    width: 80%;
+  }
+}

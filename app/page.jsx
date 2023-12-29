@@ -1,4 +1,4 @@
-import styles from './page.module.css';
+import './globals.css';
 
 //components
 import CardList from './components/pCardList';
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <div className={styles.mainContain}>
+      <div className="mainContain">
         <h3>About</h3>
         <p>Hello! My name is Michael and I currently have a B.S. degree in Computer Science. I enjoy facing new challenges and diving into the deep end to start figuring things out.
         </p>
