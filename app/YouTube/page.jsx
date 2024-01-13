@@ -1,7 +1,6 @@
 import styles from '../globals.css';
 
 //components
-import Vid from '../components/vidCard';
 import VidList from '../components/vidCardList';
 
 export default function YouTube() {
