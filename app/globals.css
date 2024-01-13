@@ -109,4 +109,8 @@ nav li {
   .mainContain {
     width: 80%;
   }
+
+  nav {
+    display: flex;
+  }
 }
