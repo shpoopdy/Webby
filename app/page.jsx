@@ -9,7 +9,6 @@ import Hero from './components/HeroHeader';
     1. There's a lot of different files doing the same thing, styles. Fix that.
     2. Figure out the YouTube API so you can dynamically fill in the video page from the Vlog playlist
     3. Do just general cleanup and try to learn this stuff better. APIs, Backends, etc.
-    4. You have page.module.css that has nothing in there yo.
     p.s. I hate that it says webby.javascript
   */
 
@@ -19,7 +18,9 @@ export default function Home() {
       <Hero />
       <div className="mainContain">
         <h3>About</h3>
-        <p>Hello! My name is Michael and I currently have a B.S. degree in Computer Science.</p>
+        <p>Hello! My name is Michael and I currently work as a programmer for <a className='p_links' href='https://www.humboldt.edu' target='_blank'>California State Polytechnic University, Humboldt</a></p>&nbsp; 
+ 
+        <p>Some more text dog</p>
   
         <h3>Projects</h3>
         <div>

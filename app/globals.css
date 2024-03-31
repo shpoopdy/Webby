@@ -63,6 +63,13 @@ a {
   transition: color 0.5s;
 }
 
+.p_links {
+  font-size: 18px;
+  color: var(--clr-fontLight);
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
 a:hover {
   color: var(--clr-accent2);
 }
