@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href="/YouTube">YouTube</Link>
         </li>
         <li>
-          <Link href="/">Posts</Link>
+          <Link href="/Posts">Posts</Link>
         </li>
       </ul>
     </nav>
