@@ -10,6 +10,9 @@ export default function Navbar() {
         <li>
           <Link href="/YouTube">YouTube</Link>
         </li>
+        <li>
+          <Link href="/">Posts</Link>
+        </li>
       </ul>
     </nav>
   )
