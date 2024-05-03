@@ -27,11 +27,6 @@ export default function Home() {
 
         <h3>I Love</h3>
         <p>Nature, friends, the ocean, making music, making YouTube videos, and being cozy.</p>
-  
-        <h3>Projects</h3>
-        <div>
-          <CardList />
-        </div>
       </div>
     </main>
   )
