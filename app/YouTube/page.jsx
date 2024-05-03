@@ -1,5 +1,3 @@
-import styles from '../globals.css';
-
 //components
 import VidList from '../components/vidCardList';
 
