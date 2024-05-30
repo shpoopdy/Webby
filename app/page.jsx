@@ -1,7 +1,7 @@
 import './globals.css';
 
 //components
-import CardList from './components/pCardList';
+import VidList from './components/vidCardList';
 import Hero from './components/HeroHeader';
 
 /*
@@ -27,6 +27,9 @@ export default function Home() {
 
         <h3>I Love</h3>
         <p>Nature, friends, the ocean, making music, making YouTube videos, and being cozy.</p>
+
+        <h3>YouTube</h3>
+        <VidList />
       </div>
     </main>
   )

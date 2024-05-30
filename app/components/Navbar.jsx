@@ -8,9 +8,6 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/YouTube">YouTube</Link>
-        </li>
-        <li>
           <Link href="/Work">Work</Link>
         </li>
       </ul>
