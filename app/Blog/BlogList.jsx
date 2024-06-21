@@ -1,11 +1,14 @@
-import { blog_data } from './blog_data';
 import BlogPost from './BlogPost';
 import styles from './BlogList.module.css';
 
-export default function BlogList() {
+
+export default function BlogList({ posts }) {
+  if (!posts || posts.length === 0) {
+    return <div>No Posts Availabe</div>
+  }
   return (
-      <div className={styles.grid_container}>
-        {blog_data.map(blog => <BlogPost key={blog.id} {...blog}/>)}
-      </div>
+    <div>
+      {posts.map(post => <BlogPost key={post.id} {...post} />)}
+    </div>
   )
 }

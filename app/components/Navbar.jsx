@@ -8,7 +8,7 @@ export default function Navbar() {
           <Link href="/">Home</Link>
         </li>
         <li>
-          <Link href="/Blog">Blog</Link>
+          <Link href="/Blog" passHref>Blog</Link>
         </li>
         <li>
           <Link href="/Work">Work</Link>
