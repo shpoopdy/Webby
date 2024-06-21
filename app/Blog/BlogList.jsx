@@ -1,14 +1,18 @@
-import BlogPost from './BlogPost';
+import Link from 'next/link';
 import styles from './BlogList.module.css';
+import getFormattedDate from '../../lib/getFormattedDate';
 
 
-export default function BlogList({ posts }) {
-  if (!posts || posts.length === 0) {
-    return <div>No Posts Availabe</div>
-  }
+export default function BlogList({ post }) {
+  const { id, title, date } = post;
+  const formattedDate = getFormattedDate(date);
   return (
     <div>
-      {posts.map(post => <BlogPost key={post.id} {...post} />)}
+      <li>
+        <Link href={`/posts/${id}`}>{title}</Link>
+        <br />
+        <p>{formattedDate}</p>
+      </li>
     </div>
   )
 }
