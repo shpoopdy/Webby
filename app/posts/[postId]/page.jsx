@@ -33,7 +33,7 @@ export default async function Post({ params }) {
   const pubDate = getFormattedDate(date);
 
   return (
-    <main>
+    <main className='mainContain'>
       <h1>{title}</h1>
       <p>{pubDate}</p>
       <article>
