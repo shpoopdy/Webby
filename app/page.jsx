@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import './globals.css';
 
 //components
@@ -9,8 +10,11 @@ import Hero from './components/HeroHeader';
     1. There's a lot of different files doing the same thing, styles. Fix that.
     2. Figure out the YouTube API so you can dynamically fill in the video page from the Vlog playlist
     3. Do just general cleanup and try to learn this stuff better. APIs, Backends, etc.
+    4. Dark Them using Context
     p.s. I hate that it says webby.javascript
   */
+
+const ThemeContext = createContext(null);
 
 export default function Home() {
   return (
