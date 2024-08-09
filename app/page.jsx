@@ -1,4 +1,5 @@
-import { useContext } from 'react';
+"use client"
+import { createContext, useContext } from 'react';
 import './globals.css';
 
 //components
@@ -17,12 +18,13 @@ import Hero from './components/HeroHeader';
 const ThemeContext = createContext(null);
 
 export default function Home() {
+  const theme = useContext(ThemeContext);
   return (
     <main>
       <Hero />
-      <div className="mainContain">
+      <div className="mainContain-light">
         <h3>About</h3>
-        <p>Hello! My name is Michael and I currently work as a programmer for <a className='p_links' href='https://www.humboldt.edu' target='_blank'>California State Polytechnic University, Humboldt</a></p>&nbsp; 
+        <p>Hello! My name is Michael and I currently work as a programmer for <a className='p_links-light' href='https://www.humboldt.edu' target='_blank'>California State Polytechnic University, Humboldt</a></p>&nbsp; 
  
         <p>I have a passion for helping people if I can and a passion for technology. I've been blessed to be able to have a job that enables me
         to have the best of both worlds. When I'm not at work, but I'm still feeling in the zone I like to work on my personal website, this one,
