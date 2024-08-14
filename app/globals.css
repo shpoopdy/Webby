@@ -23,8 +23,6 @@
   --clr-accent3: #02060A;
   --clr-accent4: #2969FE;
   
-  
-
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -34,29 +32,24 @@
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
-
-
-/*
-.p_links-light {
-  font-size: 18px;
+#dark {
   color: var(--clr-fontLight);
-  text-decoration: none;
-  transition: color 0.5s;
+  background-color: var(--clr-bgDark);
 }
-*/
 
+#light {
+  color: var(--clr-fontDark);
+  background-color: var(--clr-bgLight);
+}
 
-/*
 body {
   margin: 0;
   width: auto;
   height: auto;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  color: var(--clr-fontLight);
-  background-color: var(--clr-bgDark);
 }
-*/
+
 
 h1 {
   margin: 0;
@@ -81,23 +74,23 @@ p {
 a {
   font-size: 30px;
   text-decoration: none;
-  padding: 35px;
+  padding: 15px;
   border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s;
-}
-
-/*
-.p_links {
-  font-size: 18px;
-  color: var(--clr-fontLight);
-  text-decoration: none;
   transition: color 0.5s;
 }
-*/
 
-a:hover {
+#light a {
+  color: var(--clr-fontDark);
+}
+
+#dark a {
+ color: var(--clr-fontLight);
+}
+
+#dark a:hover {
   color: var(--clr-accent2);
 }
+
 /*
 The visited for the anchor tags was causing some kind of weird
 effect where the links would transition to get darker
@@ -109,29 +102,6 @@ a:visited {
 
 }
 */
-
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-
-/*
-nav li {
-  padding: 35px;
-  border-bottom: 1px solid transparent;
-  color: var(--clr-light);
-  text-decoration: none;
-  transition: border-bottom 0.5s;
-}
-*/
-
-
 
 @media (max-width: 768px) {
   .mainContain {
@@ -145,48 +115,18 @@ nav li {
 
 .theme-toggle {
   margin: 15px;
-  background-color: var(--clr-accent4);
+  background-color: var(--clr-bgLight);
   color: var(--clr-fontLight);
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  transition: background-color 0.3s ease;
 }
 
-.body-dark {
-  margin: 0;
-  width: auto;
-  height: auto;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-body);
-  color: var(--clr-fontLight);
-  background-color: var(--clr-bgDark);
-}
 
-.body-light {
-  margin: 0;
-  width: auto;
-  height: auto;
-  background-color: var(--clr-bgLight);
-}
 
-.body-light nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-.body-light nav ul {
-  display: flex;
-  list-style: none;
-}
-
-.body-light nav li a {
-  color: var(--clr-fontDark);
-}
-
-.mainContain-light {
+.mainContain {
   position: relative;
   min-height: 100vh;
   text-align: justify;
@@ -194,12 +134,21 @@ nav li {
   width: 40%;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  color: var(--clr-fontDark);
 }
 
-.mainContain-light a {
-  font-size: 18px;
-  color: var(--clr-fontDark);
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+
+nav li {
+  padding: 35px;
+  border-bottom: 1px solid transparent;
   text-decoration: none;
-  transition: color 0.5s;
 }
