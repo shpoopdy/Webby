@@ -1,14 +1,10 @@
 "use client"
-import { createContext, useContext, useState } from 'react';
-import { Inter } from 'next/font/google';
+import { createContext, useState } from 'react';
 import './globals.css';
 
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
-
-//const inter = Inter({ subsets: ['latin'] })
 
 export const ThemeContext = createContext(null);
 

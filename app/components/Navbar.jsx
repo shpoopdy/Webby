@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../layout';
 import Link from 'next/link';
-import '../globals.css';
+
 
 export default function Navbar() {
   const { theme, toggleTheme } = useContext(ThemeContext);

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import styles from './BlogList.module.css';
 import getFormattedDate from '../../lib/getFormattedDate';
 
 
