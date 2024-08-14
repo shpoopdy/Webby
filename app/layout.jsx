@@ -1,3 +1,5 @@
+"use client"
+import { createContext, useContext, useState } from 'react';
 import { Inter } from 'next/font/google';
 import './globals.css';
 
@@ -6,21 +8,27 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 
-const inter = Inter({ subsets: ['latin'] })
+//const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'Mikey',
-  description: 'A website of me...by me!',
-}
+export const ThemeContext = createContext(null);
+
 
 export default function RootLayout({ children }) {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  }
+
   return (
-    <html lang="en">
-      <body className="body-light">
-        <Navbar  />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ThemeContext.Provider value={ {theme, toggleTheme} }>
+      <html lang="en">
+        <body id={theme}>
+          <Navbar  />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ThemeContext.Provider>
   )
 }
