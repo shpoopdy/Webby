@@ -15,7 +15,7 @@
   
 
   /* Light Theme */
-  --clr-bgLight: #c1dcf7;
+  --clr-bgLight: #fffbeb;
   --clr-fontDark: #000000;
 
   --clr-accent: #231F0F;
@@ -91,6 +91,10 @@ a {
   color: var(--clr-accent2);
 }
 
+#light a:hover {
+  color: #a8a29e;
+}
+
 /*
 The visited for the anchor tags was causing some kind of weird
 effect where the links would transition to get darker
@@ -115,7 +119,7 @@ a:visited {
 
 .theme-toggle {
   margin: 15px;
-  background-color: var(--clr-bgLight);
+  background-color: var(--clr-accent4);
   color: var(--clr-fontLight);
   border: none;
   padding: 10px 20px;
