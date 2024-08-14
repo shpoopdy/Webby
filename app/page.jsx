@@ -1,5 +1,4 @@
-"use client"
-import { createContext, useContext } from 'react';
+import React from 'react';
 import './globals.css';
 
 //components
@@ -15,16 +14,20 @@ import Hero from './components/HeroHeader';
     p.s. I hate that it says webby.javascript
   */
 
-const ThemeContext = createContext(null);
+  export const metadata = {
+    title: 'Mikey',
+    description: 'A website of me...by me!',
+  }
+
 
 export default function Home() {
-  const theme = useContext(ThemeContext);
+  
   return (
     <main>
       <Hero />
-      <div className="mainContain-light">
+      <div className="mainContain">
         <h3>About</h3>
-        <p>Hello! My name is Michael and I currently work as a programmer for <a className='p_links-light' href='https://www.humboldt.edu' target='_blank'>California State Polytechnic University, Humboldt</a></p>&nbsp; 
+        <p>Hello! My name is Michael and I currently work as a programmer for California State Polytechnic University, Humboldt</p>&nbsp; 
  
         <p>I have a passion for helping people if I can and a passion for technology. I've been blessed to be able to have a job that enables me
         to have the best of both worlds. When I'm not at work, but I'm still feeling in the zone I like to work on my personal website, this one,
