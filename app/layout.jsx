@@ -1,26 +1,30 @@
-import { Inter } from 'next/font/google';
+"use client"
+import { createContext, useState } from 'react';
 import './globals.css';
 
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
+export const ThemeContext = createContext(null);
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-  title: 'Mikey',
-  description: 'A website of me...by me!',
-}
 
 export default function RootLayout({ children }) {
+  const [theme, setTheme] = useState('light')
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
+  }
+
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <ThemeContext.Provider value={ {theme, toggleTheme} }>
+      <html lang="en">
+        <body id={theme}>
+          <Navbar  />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </ThemeContext.Provider>
   )
 }

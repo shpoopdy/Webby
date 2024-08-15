@@ -7,18 +7,22 @@
 :root {
   --ff-primary: 'Asap', sans-serif;
   --ff-secondary: 'PT Mono', monospace;
-
   --fw--reg: 400;
 
+  /* Dark Theme */
   --clr-bgDark: #0B1117;
-  --clr-bgLight: #c1dcf7;
+  --clr-fontLight: #ffffff;
+  
+
+  /* Light Theme */
+  --clr-bgLight: #fffbeb;
+  --clr-fontDark: #000000;
+
   --clr-accent: #231F0F;
   --clr-accent2: #282E33;
   --clr-accent3: #02060A;
   --clr-accent4: #2969FE;
-  --clr-fontLight: #ffffff;
-  --clr-fontDark: #000000;
-
+  
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
@@ -28,15 +32,24 @@
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
+#dark {
+  color: var(--clr-fontLight);
+  background-color: var(--clr-bgDark);
+}
+
+#light {
+  color: var(--clr-fontDark);
+  background-color: var(--clr-bgLight);
+}
+
 body {
   margin: 0;
   width: auto;
   height: auto;
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
-  color: var(--clr-fontLight);
-  background-color: var(--clr-bgDark);
 }
+
 
 h1 {
   margin: 0;
@@ -57,23 +70,31 @@ p {
   font-size: 18px;
 }
 
+
 a {
   font-size: 30px;
-  color: var(--clr-fontLight);
   text-decoration: none;
+  padding: 15px;
+  border-bottom: 1px solid transparent;
   transition: color 0.5s;
 }
 
-.p_links {
-  font-size: 18px;
-  color: var(--clr-fontLight);
-  text-decoration: none;
-  transition: color 0.5s;
+#light a {
+  color: var(--clr-fontDark);
 }
 
-a:hover {
+#dark a {
+ color: var(--clr-fontLight);
+}
+
+#dark a:hover {
   color: var(--clr-accent2);
 }
+
+#light a:hover {
+  color: #a8a29e;
+}
+
 /*
 The visited for the anchor tags was causing some kind of weird
 effect where the links would transition to get darker
@@ -86,24 +107,37 @@ a:visited {
 }
 */
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-  
+@media (max-width: 768px) {
+  #light .mainContain {
+    width: 80%;
+  }
+
+  #dark .mainContain {
+    width: 80%;
+  }
+
+  nav {
+    display: flex;
+  }
 }
 
-nav ul {
+.theme-toggle {
+  margin: 35px;
   display: flex;
-  list-style: none;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  line-height: 40px;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
 }
 
-nav li {
-  padding: 35px;
-  border-bottom: 1px solid transparent;
-  color: var(--clr-light);
-  text-decoration: none;
-  transition: border-bottom 0.5s;
+.theme-toggle #btn-img {
+  margin-top: 7px;
 }
+
+
 
 .mainContain {
   position: relative;
@@ -111,14 +145,23 @@ nav li {
   text-align: justify;
   margin: 25px auto auto auto;
   width: 40%;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
 }
 
-@media (max-width: 768px) {
-  .mainContain {
-    width: 80%;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
 
-  nav {
-    display: flex;
-  }
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+
+nav li {
+  padding: 35px;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
 }
