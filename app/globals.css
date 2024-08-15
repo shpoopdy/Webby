@@ -108,7 +108,11 @@ a:visited {
 */
 
 @media (max-width: 768px) {
-  .mainContain {
+  #light .mainContain {
+    width: 80%;
+  }
+
+  #dark .mainContain {
     width: 80%;
   }
 
@@ -118,14 +122,15 @@ a:visited {
 }
 
 .theme-toggle {
-  margin: 15px;
-  background-color: var(--clr-accent4);
-  color: var(--clr-fontLight);
+  margin: 35px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  line-height: 40px;
   border: none;
-  padding: 10px 20px;
+  border-radius: 25%;
   cursor: pointer;
-  font-family: var(--ff-primary);
-  font-size: var(--fs-body);
 }
 
 
