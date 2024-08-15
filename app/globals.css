@@ -133,6 +133,10 @@ a:visited {
   cursor: pointer;
 }
 
+.theme-toggle #btn-img {
+  margin-top: 7px;
+}
+
 
 
 .mainContain {
