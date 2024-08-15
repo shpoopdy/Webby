@@ -8,7 +8,12 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        <button className='theme-toggle' onClick={() => {toggleTheme(theme === 'light' ? 'dark' : 'light')}}>PUSH!</button>
+        <button
+          className='theme-toggle'
+          id={theme === 'light' ? 'dark' : 'light'}
+          onClick={() => {toggleTheme(theme === 'light' ? 'dark' : 'light')}}>
+          PUSH!
+        </button>
         <ul>
           <li>
             <Link href="/">Home</Link>
