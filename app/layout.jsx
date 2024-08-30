@@ -22,7 +22,6 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body id={theme}>
           <Navbar  />
-          <MobileNavbar />
           {children}
           <Footer />
         </body>
