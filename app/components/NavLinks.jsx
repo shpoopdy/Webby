@@ -1,20 +1,20 @@
 import Link from 'next/link';
 
 
-const NavLinks = () => {
+const NavLinks = ({isClicked, closeMenu}) => {
   return (
     <nav className="NavLinks">
       <ul>
-        <li>
+        <li onClick={() => isClicked && closeMenu()}>
           <Link href="/">Home</Link>
         </li>
-        <li>
+        <li onClick={() => isClicked && closeMenu()}>
           <Link href="/Blog" passHref>Blog</Link>
         </li>
-        <li>
+        <li onClick={() => isClicked && closeMenu()}>
           <Link href="/Work">Work</Link>
         </li>
-        </ul>
+      </ul>
     </nav>
   )
 }
