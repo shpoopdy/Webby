@@ -120,6 +120,17 @@ a:visited {
 }
 
 @media (max-width: 768px) {
+
+  .NavLinks a {
+    font-size: 22px;
+  }
+
+  .NavLinks li {
+    margin-top: 30px;
+    font-size: 10px;
+    padding: 0;
+  }
+
   #light .mainContain {
     width: 80%;
   }
