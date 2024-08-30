@@ -5,6 +5,7 @@ import './globals.css';
 // Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import MobileNavbar from './components/MobileNavbar';
 
 export const ThemeContext = createContext(null);
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <body id={theme}>
           <Navbar  />
+          <MobileNavbar />
           {children}
           <Footer />
         </body>
