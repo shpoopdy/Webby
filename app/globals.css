@@ -50,7 +50,6 @@ body {
   font-size: var(--fs-body);
 }
 
-
 h1 {
   margin: 0;
   display: inline-block;
@@ -69,7 +68,6 @@ p {
   font-family: var(--ff-primary);
   font-size: 18px;
 }
-
 
 a {
   font-size: 30px;
@@ -107,6 +105,20 @@ a:visited {
 }
 */
 
+.NavLinks {
+  height: 15vh;
+}
+
+.MobileNavbar {
+  display: none;
+}
+
+.HamburgerMenu {
+  position: absolute;
+  right: 2%;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   #light .mainContain {
     width: 80%;
@@ -116,8 +128,15 @@ a:visited {
     width: 80%;
   }
 
-  nav {
+  .DesktopNavbar {
+    display: none;
+  }
+
+  .MobileNavbar {
     display: flex;
+    padding-right: 50px;
+    align-items: center;
+    height: 15vh;
   }
 }
 
@@ -136,8 +155,6 @@ a:visited {
 .theme-toggle #btn-img {
   margin-top: 7px;
 }
-
-
 
 .mainContain {
   position: relative;
