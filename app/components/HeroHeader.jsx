@@ -44,7 +44,7 @@ export default function HeroHeader() {
               <h1>Mikey</h1>
               <p
                 onMouseEnter={() => checkGreet()}
-                onMouseLeave={() => setIsHovered(greeting)}
+                onMouseLeave={() => setIsHovered(greeting)} style={{width:"50%"}}
               >{isHovered}</p>
             </div>
         </div>
