@@ -10,13 +10,13 @@ export default function HeroHeader() {
   let greeting;
 
   if(hour >= 18) {
-      greeting = 'こんばんは';
+      greeting = 'God kveld';
   }
   else if(hour >= 12) {
-      greeting = 'こんにちは';
+      greeting = 'God dag';
   }
   else {
-      greeting = 'おはようございます';
+      greeting = 'God morgen';
   }
 
   
