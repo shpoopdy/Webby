@@ -6,6 +6,13 @@ import Card from './pCard';
 
 const projectData = [
     {
+        "id": 0,
+        "name": "Twitch Live",
+        "Image": "/images/twitchLive.png",
+        "Link": "https://github.com/shpoopdy/TwitchLive",
+        "text": "iOS app that utilizes API calls."
+    },
+    {
         "id": 1,
         "name": "Twitter Bot",
         "Image": "/images/twitterBot.png",
