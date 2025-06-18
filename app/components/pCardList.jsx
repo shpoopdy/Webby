@@ -7,38 +7,11 @@ import Card from './pCard';
 const projectData = [
     {
         "id": 0,
-        "name": "Twitch Live",
-        "Image": "/images/twitchLive.png",
-        "Link": "https://github.com/shpoopdy/TwitchLive",
-        "text": "iOS app that utilizes API calls."
-    },
-    {
-        "id": 1,
-        "name": "Twitter Bot",
-        "Image": "/images/twitterBot.png",
-        "Link": "https://github.com/shpoopdy/TwitterBot",
-        "text": "A twitter bot that tweets info from approved twitter pages."
-    },
-    {
-        "id": 2,
-        "name": "Night Watch App",
-        "Image": "/images/nightWatch.png",
-        "Link": "https://github.com/shpoopdy/Night-Watch",
-        "text": "A todo app created for the iPhone that utilizes SwiftUI"
-    },
-    {
-        "id": 3,
-        "name": "Towered",
-        "Image": "/images/towered.png",
-        "Link": "https://github.com/shpoopdy/Towered",
-        "text": "Tower defense game made with the Unity game engine."
-    },
-    {
-        "id": 4,
-        "name": "Cipher Site",
-        "Image": "/images/cipherHack.png",
-        "Link": "https://github.com/shpoopdy/Hackathon2023",
-        "text": "A website that allows you to try and crack a Vigenère Cipher."
+        "name": "Movie Friends",
+        "Image": "/images/movie-friends.png",
+        "Link": "https://www.movie-friends.com/",
+        "text": "Website that allows you to create a list which you can populate with items and share with approved friends. They will also be able to add items to this list upon approval.",
+        "alt_text": "Login page for movie-friends.com"
     }
 ]
 

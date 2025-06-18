@@ -12,6 +12,7 @@ import Hero from './components/HeroHeader';
     3. Do just general cleanup and try to learn this stuff better. APIs, Backends, etc.
     4. Dark Them using Context
     p.s. I hate that it says webby.javascript
+    p.p.s npm run dev
   */
 
   export const metadata = {
