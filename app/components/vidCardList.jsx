@@ -19,7 +19,7 @@ const vidData = [
 ]
 export default function vidCardList() {
     return (
-        <div className={styles.grid_container}>
+        <div className={styles.grid_container_vid}>
             {vidData.map(project => <Video key={project.id} {...project}/>)}
         </div>
     )
