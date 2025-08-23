@@ -194,3 +194,96 @@ nav li {
   border-bottom: 1px solid transparent;
   text-decoration: none;
 }
+
+/* === BLOG PAGE (scoped) ======================================= */
+.blogPage { --prose-max: 72ch; }
+
+/* Title */
+.blogPage .blogName {
+  display: block;
+  margin: 0 0 .25rem 0;
+  font-family: var(--ff-secondary);
+  font-size: clamp(2rem, 3vw + 1rem, var(--fs-h1));
+  line-height: 1.1;
+  letter-spacing: .2px;
+}
+
+/* Meta row (Posted / Last edited) */
+.blogPage .blogMeta {
+  display: flex;
+  align-items: center;
+  column-gap: .75rem;
+  row-gap: .25rem;
+  flex-wrap: wrap;
+  margin: .5rem 0 1.5rem;
+  font-size: .95rem;
+  opacity: .9;
+}
+
+/* tiny dot separator between posted/edited */
+.blogPage .meta-sep {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: currentColor;
+  opacity: .45;
+}
+#dark .blogPage .blogMeta { color: rgba(255,255,255,.75); }
+#light .blogPage .blogMeta { color: rgba(0,0,0,.65); }
+
+.blogPage .blogLastEdit { font-style: italic; }
+
+/* Content */
+.blogPage article {
+  max-width: var(--prose-max);
+  text-align: left;         /* overrides global justify for readability */
+  hyphens: auto;
+  line-height: 1.8;
+  font-size: 1.0625rem;
+}
+.blogPage article > * + * { margin-top: 1rem; }
+.blogPage article h2,
+.blogPage article h3 { margin-top: 2rem; }
+
+/* Links inside post content */
+.blogPage article a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Images */
+.blogPage article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--bs);
+  margin: 1.25rem auto;
+}
+
+/* Code blocks & inline code */
+.blogPage article pre {
+  overflow: auto;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+#dark .blogPage article pre { background: #0f172a; color: #e2e8f0; }
+#light .blogPage article pre { background: rgba(17,24,39,.06); color: #111827; }
+
+.blogPage article code {
+  padding: .15em .35em;
+  border-radius: .4em;
+}
+
+#dark .blogPage article code { background: #0f172a; }
+#light .blogPage article code { background: rgba(17,24,39,.06); }
+
+/* Blockquotes */
+.blogPage blockquote {
+  border-left: 4px solid var(--clr-accent4);
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  opacity: .95;
+}

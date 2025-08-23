@@ -47,14 +47,19 @@ export async function getPostData(id) {
       .use(html)
       .process(matterResult.content);
   
-      const contentHtml = processedContent.toString();
+  const contentHtml = processedContent.toString();
 
-      const blogPostWithHTML = {
-        id,
-        title: matterResult.data.title,
-        date: matterResult.data.date,
-        contentHtml,
-      }
+  // last edited timestamp {file mtime}
+  const stats = fs.statSync(fullPath);
+  const updatedAt = stats.mtime.toISOString();
 
-      return blogPostWithHTML;
+  const blogPostWithHTML = {
+    id,
+    title: matterResult.data.title,
+    date: matterResult.data.date,
+    contentHtml,
+    updatedAt,
+  }
+  console.log(`updatedAt: `, updatedAt);
+  return blogPostWithHTML;
 }

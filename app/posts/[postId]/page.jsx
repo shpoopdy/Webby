@@ -6,7 +6,6 @@ import Link from 'next/link';
 export function generateMetadata({ params }) {
   const posts = getSortedPostsData();
   const { postId } = params;
-
   const post = posts.find(post => post.id === postId)
 
   if (!post) {
@@ -20,22 +19,34 @@ export function generateMetadata({ params }) {
   }
 }
 
+export const revalidate = 60;
+
 export default async function Post({ params }) {
   const posts = getSortedPostsData();
-  const { postId } = params;
+  const { postId } = await params;
 
   if (!posts.find(post => post.id === postId)) {
     return notFound();
   }
 
-  const { title, date, contentHtml } = await getPostData(postId);
+  const { title, date, contentHtml, updatedAt } = await getPostData(postId);
 
   const pubDate = getFormattedDate(date);
+  const lastEdited = updatedAt ? getFormattedDate(updatedAt) : null;
+  const showEdited = updatedAt && new Date(updatedAt).getTime() !== new Date(date).getTime();
 
   return (
-    <main className='mainContain'>
-      <h1>{title}</h1>
-      <p>{pubDate}</p>
+    <main className='mainContain blogPage'>
+      <h1 className='blogName'>{title}</h1>
+      <div className='blogMeta'>
+        <time className='blogPosted'>Posted: {pubDate}</time>
+        {showEdited && (
+          <>
+            <span className="meta-sep" aria-hidden="true"></span>
+            <time className='blogLastEdit'>Last edited: {lastEdited}</time>
+          </>
+        )}
+      </div>
       <article>
         <section dangerouslySetInnerHTML={{__html: contentHtml}}></section>
         <p>
