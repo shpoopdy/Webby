@@ -1,6 +1,7 @@
 import { getPostData, getSortedPostsData } from "../../../lib/posts"
 import { notFound } from 'next/navigation';
 import getFormattedDate from "../../../lib/getFormattedDate";
+import getLastEditedISO from '../../../lib/getLastEditedISO';
 import Link from 'next/link';
 
 export function generateMetadata({ params }) {
@@ -19,7 +20,6 @@ export function generateMetadata({ params }) {
   }
 }
 
-export const revalidate = 60;
 
 export default async function Post({ params }) {
   const posts = getSortedPostsData();
@@ -33,6 +33,7 @@ export default async function Post({ params }) {
 
   const pubDate = getFormattedDate(date);
   const lastEdited = updatedAt ? getFormattedDate(updatedAt) : null;
+  console.log(lastEdited);
   const showEdited = updatedAt && new Date(updatedAt).getTime() !== new Date(date).getTime();
 
   return (

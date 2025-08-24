@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html  from 'remark-html';
-import { getLastEditedISO } from './getLastEditedISO';
+import getLastEditedISO from './getLastEditedISO';
 
 const postsDirectory = path.join(process.cwd(), 'blogposts');
 
@@ -61,6 +61,6 @@ export async function getPostData(id) {
     contentHtml,
     updatedAt,
   }
-  console.log(`updatedAt: `, updatedAt);
+
   return blogPostWithHTML;
 }
