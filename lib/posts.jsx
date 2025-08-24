@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html  from 'remark-html';
+import { getLastEditedISO } from './getLastEditedISO';
 
 const postsDirectory = path.join(process.cwd(), 'blogposts');
 
@@ -51,7 +52,7 @@ export async function getPostData(id) {
 
   // last edited timestamp {file mtime}
   const stats = fs.statSync(fullPath);
-  const updatedAt = stats.mtime.toISOString();
+  const updatedAt = getLastEditedISO(fullPath);
 
   const blogPostWithHTML = {
     id,
