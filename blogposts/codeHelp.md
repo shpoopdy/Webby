@@ -1,21 +1,7 @@
 ---
-title: 'Code I Seem to Forget'
+title: 'Code I Seem to Always Forget'
 date: '2025-08-23'
 ---
-
-# Helpful Tidbits
-Using sort(arr.being, arr.end(), compareSecond) on a 2D array will sort the array by the second element, given that the array only has two elements in it.
-
-```
-compareSecond(vector<int>& a, vector<int> b) {
-    return a[1] < b[1]>;
-}
-
-vector<vector<int>> myVector = {{1,2}, {2,3}, {3,4}, {1,3}};
-sort(myVector.begin(), myVector.end(), compareSecond);
-
-//result: { {1,2}, {2,3}, {1,3}, {3,4} }
-```
 
 ## Swift
 ```
@@ -149,6 +135,16 @@ n - 1 = 0011 (3)
 --------------- &
 result = 0000
 // Bitwise AND (&) keeps a bit set to 1 only if it is 1 in both numbers.
+
+// Using sort(arr.being, arr.end(), compareSecond) on a 2D array will sort the array by the second element, given that the array only has two elements in it.
+compareSecond(vector<int>& a, vector<int> b) {
+    return a[1] < b[1]>;
+}
+
+vector<vector<int>> myVector = {{1,2}, {2,3}, {3,4}, {1,3}};
+sort(myVector.begin(), myVector.end(), compareSecond);
+
+//result: { {1,2}, {2,3}, {1,3}, {3,4} }
 ```
 
 ## Vim
