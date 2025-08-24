@@ -1,6 +1,5 @@
 import NavLinks from './NavLinks';
 
-
 export default function DesktopNavbar() {
   return (
     <>

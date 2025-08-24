@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 const NavLinks = ({isClicked, closeMenu}) => {
   return (
     <nav className="NavLinks">

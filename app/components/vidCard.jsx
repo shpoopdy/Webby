@@ -1,7 +1,7 @@
 export default function vidCard(props) {
-    return (
-        <div>
-            {props.src}
-        </div>
-    )
+  return (
+    <div>
+      {props.src}
+    </div>
+  )
 }
