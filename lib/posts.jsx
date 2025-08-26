@@ -51,8 +51,7 @@ export async function getPostData(id) {
   const contentHtml = processedContent.toString();
 
   // last edited timestamp {file mtime}
-  const stats = fs.statSync(fullPath);
-  const updatedAt = getLastEditedISO(fullPath);
+  const updatedAt = matterResult.data.last_edited;
 
   const blogPostWithHTML = {
     id,

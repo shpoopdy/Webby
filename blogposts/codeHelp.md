@@ -1,6 +1,7 @@
 ---
 title: 'Code I Seem to Always Forget'
 date: '2025-08-23'
+last_edited: '2025-08-25'
 ---
 
 ## Swift

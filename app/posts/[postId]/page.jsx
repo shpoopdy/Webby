@@ -31,8 +31,7 @@ export default async function Post({ params }) {
   const { title, date, contentHtml, updatedAt } = await getPostData(postId);
 
   const pubDate = getFormattedDate(date);
-  const lastEdited = updatedAt ? getFormattedDate(updatedAt) : null;
-  console.log(lastEdited);
+  const lastEdited = getFormattedDate(updatedAt);
   const showEdited = updatedAt && new Date(updatedAt).getTime() !== new Date(date).getTime();
 
   return (
