@@ -15,13 +15,13 @@ var arr: [String] = []
 
 // The following is a for each loop with an object using ForEach
 ForEach(MockData.frameworks) { framework in
-	FrameworkTitleView(name: framework.name, imageName: framework.imageName)
+  FrameworkTitleView(name: framework.name, imageName: framework.imageName)
 }
 
 // For each loop using for in
 let names = ["Anna", "Alex", "Brian", "Jack"]
 for name in names {
-    print("Hello, \(name)!")
+  print("Hello, \(name)!")
 }
 
 // You can put tuples in Switch statements. Remember to lookup what the underbar means again
@@ -65,19 +65,21 @@ priority_queue< int, vector<int>, greater<int> > minHeap;
 
 priority_queue<int> maxHeap;
 
-// For each loop
-for (int num : nums) {}
+// For each loop [1,2,3,4]
+for (int num : nums) {
+  cout << num << endl; // 1, 2, 3...
+}
 
 // Loop through map || unordered_map
 for (auto [key, val] : hashMap) {
-	cout << "Key: " << key << endl;
-	cout << "Value: " << val << endl;
+  cout << "Key: " << key << endl;
+  cout << "Value: " << val << endl;
 }
 
 // A different way to loop through a map.
 for (auto const& pair : hashMap) {
-	cout << "Key: " << pair.first << endl;
-	cout << "Value: " << pair.second << endl;
+  cout << "Key: " << pair.first << endl;
+  cout << "Value: " << pair.second << endl;
 }
 
 // Length of a number, casting to int because it will return a double
@@ -86,44 +88,44 @@ cout << int log10(nums[0]) + 1 << endl; // 1
 cout << int log10(nums[1]) + 1 << endl; // 2
 cout << int log10(nums[2]) + 1 << endl; // 3
 
-// Creating a vector of vectors of size n that initializes the inner vectors with an empty string. ;
+// Creating a vector of vectors of size n that initializes the inner vectors with an empty string.
 vector<vector<string>> prefixes(n, vector<string>(1,"")); // size of one was arbitrarily chosen
 
 // Getting a string and splitting it based on the delimiter.
 vector<string> split(string str, char delimiter) {
-	stringstream ss(str);
-	vector<string> ans;
-	string token;
+  stringstream ss(str);
+  vector<string> ans;
+  string token;
 	
-	while (getline(ss, token, delimiter)) {
-		ans.push_back(token);
-	}
+  while (getline(ss, token, delimiter)) {
+    ans.push_back(token);
+  }
 	
-	return ans;
+  return ans;
 }
 
 // Converting an integer to binary
 void convertToBinary(int n) {
-	int biArr[32];
+  int biArr[32];
 	
-	for (int i = 0; i < 32; i++) {
-		biArr[i] = n % 2;
-		n = n /2;
-	}
+  for (int i = 0; i < 32; i++) {
+    biArr[i] = n % 2;
+	n = n /2;
+  }
 	
-	// I suppose depending on what you want to do this could return something or do something else.
+  // I suppose depending on what you want to do this could return something or do something else.
 }
 
-void decToBinary(int n)
-{
-    // Size of an integer is assumed to be 32 bits
-    for (int i = 31; i >= 0; i--) {
-        int k = n >> i;
-        if (k & 1)
-            cout << "1";
-        else
-            cout << "0";
+void decToBinary(int n) {
+  // Size of an integer is assumed to be 32 bits
+  for (int i = 31; i >= 0; i--) {
+    int k = n >> i;
+    if (k & 1) {
+	  cout << "1";
+	} else{
+      cout << "0";
     }
+  }
 }
 
 // Casting int to long long
@@ -139,7 +141,7 @@ result = 0000
 
 // Using sort(arr.being, arr.end(), compareSecond) on a 2D array will sort the array by the second element, given that the array only has two elements in it.
 compareSecond(vector<int>& a, vector<int> b) {
-    return a[1] < b[1]>;
+  return a[1] < b[1]>;
 }
 
 vector<vector<int>> myVector = {{1,2}, {2,3}, {3,4}, {1,3}};
