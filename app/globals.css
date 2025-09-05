@@ -178,6 +178,10 @@ a:visited {
   font-size: var(--fs-body);
 }
 
+ul {
+  list-style: none;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
