@@ -291,3 +291,9 @@ nav li {
   font-style: italic;
   opacity: .95;
 }
+
+.blogSection a {
+  position: relative;
+  text-align: left;
+  left: -25px;
+}
