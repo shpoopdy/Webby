@@ -6,12 +6,13 @@ export default function BlogList({ post }) {
   const formattedDate = getFormattedDate(date);
   
   return (
-    <div>
-      <li>
-        <Link href={`/posts/${id}`}>{title}</Link>
-        <br />
-        <p>{formattedDate}</p>
+      <li className="blogItem">
+        <div className="blogHeader">
+          <Link href={`/posts/${id}`} className="blogTitle">
+            {title}
+          </Link>
+        <span className="blogDate">{formattedDate}</span>
+        </div>
       </li>
-    </div>
   )
 }

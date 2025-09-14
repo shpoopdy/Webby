@@ -11,14 +11,12 @@ export default function Posts() {
   }
 
   return (
-    <section>
-      <h2>
+    <section className="blogCard">
         <ul>
           {posts.map(post => (
             <BlogList key={post.id} post={post} />
           ))}
         </ul>
-      </h2>
     </section>
   )
 }

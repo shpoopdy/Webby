@@ -171,7 +171,7 @@ a:visited {
 .mainContain {
   position: relative;
   min-height: 100vh;
-  text-align: justify;
+  
   margin: 25px auto auto auto;
   width: 40%;
   font-family: var(--ff-primary);
@@ -292,8 +292,35 @@ nav li {
   opacity: .95;
 }
 
-.blogSection a {
-  position: relative;
-  text-align: left;
-  left: -25px;
+.blogCard {
+  margin: 50px 0 0 0;
+}
+
+.blogCard ul {
+  padding-left: 0;   /* removes default list padding */
+  margin: 0;
+}
+
+.blogCard li {
+  list-style: none;  /* remove bullets */
+  margin-bottom: 1rem;
+  text-align: left;  /* ensure flush left */
+}
+
+.blogTitle {
+  display: block;    /* makes title take full width */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blogDate {
+  margin: 0.25rem 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.blogHeader {
+  display: flex;
+  justify-content: space-between;  /* pushes title left, date right */
+  align-items: baseline;           /* keeps date aligned with text baseline */
 }
