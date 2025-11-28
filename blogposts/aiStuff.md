@@ -1,6 +1,7 @@
 ---
 title: 'AI Is Cool I Guess'
 date: '2025-11-05'
+last_edited: '2025-11-28'
 ---
 
 # Just Have AI Do It
