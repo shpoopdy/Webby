@@ -4,8 +4,10 @@ date: '2025-11-05'
 last_edited: '2025-11-28'
 ---
 
-# Just Have AI Do It
-That's what one of my friends said to me while I was making edits to my one of my websites. I honestly thought about it for a second and then decided not to and my reasoning was this: **Why can't I just do it myself?** 
+## Just Have AI Do It
+That's what one of my friends said to me while I was making edits to my one of my websites. I honestly thought about it for a second and then decided not to and my reasoning was this: 
+
+**Why can't I just do it myself?** 
 
 It's late in the evening, I already had dinner, and I'm not doing anything important at the moment. I have my music playing in the background, there's a cup of coffee right here that I'm drinking (bad idead at night), and there are no pressing matters happening right now. 
 
