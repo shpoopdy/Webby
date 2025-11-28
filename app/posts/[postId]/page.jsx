@@ -1,7 +1,6 @@
 import { getPostData, getSortedPostsData } from "../../../lib/posts"
 import { notFound } from 'next/navigation';
 import getFormattedDate from "../../../lib/getFormattedDate";
-import getLastEditedISO from '../../../lib/getLastEditedISO';
 import Link from 'next/link';
 
 export function generateMetadata({ params }) {
@@ -32,8 +31,7 @@ export default async function Post({ params }) {
   const { title, date, contentHtml, updatedAt } = await getPostData(postId);
 
   const pubDate = getFormattedDate(date);
-  const lastEdited = updatedAt ? getFormattedDate(updatedAt) : null;
-  console.log(lastEdited);
+  const lastEdited = getFormattedDate(updatedAt);
   const showEdited = updatedAt && new Date(updatedAt).getTime() !== new Date(date).getTime();
 
   return (
