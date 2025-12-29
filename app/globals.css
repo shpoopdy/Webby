@@ -245,7 +245,7 @@ nav li {
   line-height: 1.8;
   font-size: 1.0625rem;
 }
-.blogPage article > * + * { margin-top: 1rem; }
+.blogPage article section > * + * { margin-top: 1rem; }
 .blogPage article h2,
 .blogPage article h3 { margin-top: 2rem; }
 
