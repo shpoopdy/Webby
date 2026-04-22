@@ -1,7 +1,7 @@
 ---
 title: 'Code I Seem to Always Forget'
 date: '2025-08-23'
-last_edited: '2025-08-25'
+last_edited: '2026-04-22'
 ---
 
 ## Swift
@@ -161,4 +161,16 @@ sort(myVector.begin(), myVector.end(), compareSecond);
 
 // Exit terminal to get back into normal mode
 <C-\><C-n>
+```
+
+## Python
+```
+// Create a virtual environment from the terminal macos
+python3 -m venv .venv
+
+// Activate virtual environment macos
+source .venv/bin/activate
+
+// Deactivate virtual environment macos
+deactivate
 ```
