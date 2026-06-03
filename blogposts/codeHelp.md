@@ -165,12 +165,14 @@ sort(myVector.begin(), myVector.end(), compareSecond);
 
 ## Python
 ```
-// Create a virtual environment from the terminal macos
-python3 -m venv .venv
+// Create a virtual environment from the terminal
+python3 -m venv .venv (MacOS)
+python -m venv .venv (PowerShell)
 
-// Activate virtual environment macos
-source .venv/bin/activate
+// Activate virtual environment 
+source .venv/bin/activate (MacOS)
+.venv\Scripts\Activate.ps1 (PowerShell)
 
-// Deactivate virtual environment macos
+// Deactivate virtual environment MacOS
 deactivate
 ```
