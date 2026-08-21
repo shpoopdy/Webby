@@ -7,11 +7,11 @@ import Card from './pCard';
 const projectData = [
   {
     "id": 0,
-    "name": "Movie Friends",
+    "name": "Nerd Lists",
     "Image": "/images/movie-friends.png",
-    "Link": "https://www.movie-friends.com/",
+    "Link": "https://nerdlists.com/",
     "text": "Website that allows you to create a list which you can populate with items and share with approved friends. They will also be able to add items to this list upon approval.",
-    "alt_text": "Login page for movie-friends.com"
+    "alt_text": "Login page for nerdlists.com"
   }
 ]
 
