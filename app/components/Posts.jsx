@@ -1,5 +1,6 @@
 import { getSortedPostsData } from '../../lib/posts';
 import BlogList from '../Blog/BlogList';
+import styles from '../Blog/BlogList.module.css';
 
 export default function Posts() {
   const posts = getSortedPostsData();
@@ -12,11 +13,11 @@ export default function Posts() {
 
   return (
     <section className="blogCard">
-        <ul>
-          {posts.map(post => (
-            <BlogList key={post.id} post={post} />
-          ))}
-        </ul>
+      <ul className={styles.grid_container_blog}>
+        {posts.map(post => (
+          <BlogList key={post.id} post={post} />
+        ))}
+      </ul>
     </section>
   )
 }
