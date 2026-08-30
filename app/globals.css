@@ -35,11 +35,13 @@
 #dark {
   color: var(--clr-fontLight);
   background-color: var(--clr-bgDark);
+  --clr-card-bg: #34506d;
 }
 
 #light {
   color: var(--clr-fontDark);
   background-color: var(--clr-bgLight);
+  --clr-card-bg: #fdf0d2;
 }
 
 body {
@@ -307,17 +309,7 @@ nav li {
   text-align: left;  /* ensure flush left */
 }
 
-.blogTitle {
-  display: block;    /* makes title take full width */
-  font-size: 1.5rem;
-  font-weight: bold;
-}
 
-.blogDate {
-  margin: 0.25rem 0 0;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
 
 .blogHeader {
   display: flex;
