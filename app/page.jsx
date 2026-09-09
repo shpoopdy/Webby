@@ -28,10 +28,10 @@ export default function Home() {
       <Hero />
       <div className="mainContain">
         <h3>About</h3>
-        <p>Hello! My name is Michael and I currently work as a programmer for California State Polytechnic University, Humboldt</p>&nbsp; 
+        <p>Hello! My name is Michael,</p>&nbsp; 
  
-        <p>I have a passion for helping people if I can and a passion for technology. I've been blessed to be able to have a job that enables me
-        to have the best of both worlds. When I'm not at work, but I'm still feeling in the zone I like to work on my personal website, this one,
+        <p>I have a passion for helping people if I can and a passion for technology.
+        I like to work on my personal website, this one,
         as well as some ideas that I have floating around in my head that will be of use to everyone.
         </p>
 
